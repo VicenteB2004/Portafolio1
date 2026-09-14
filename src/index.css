@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  /* Paleta Neutra + Acento Industrial */
+  --color-bg-primary: #0A0A0A;
+  --color-bg-surface: #141414;
+  --color-bg-card: #1A1A1E;
+  
+  --color-text-main: #F4F4F5;
+  --color-text-muted: #8E8E93;
+  
+  --color-border-subtle: #262629;
+  
+  --color-accent: #E25822;
+  --color-accent-hover: #FF6B35;
+
+  /* Fuentes del sistema y tipografía técnica */
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --font-display: 'Syne', 'Inter', sans-serif;
+
+  /* Escala de Letter Spacing Editorial */
+  --tracking-tightest: -0.04em;
+  --tracking-editorial: -0.02em;
+}
+
+/* Estilos de Reset de Alto Rendimiento */
+:root {
+  color-scheme: dark;
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-main);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  body, a, button {
+    cursor: none !important;
+  }
+}
